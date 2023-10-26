@@ -1,3 +1,4 @@
+
 // HT-7 average value
 
 // const firstnumber= +prompt('Enter the first number');
