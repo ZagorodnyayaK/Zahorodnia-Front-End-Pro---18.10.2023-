@@ -8,7 +8,7 @@ const value = (firstnumber + secondnumber + thirdnumber) / qualityOfValue;
 alert('Average value = ' + value);
 
 
- // HT 8 - User profile
+//  // HT 8 - User profile
 
 let birthYear = prompt('Введи рік свого народження');
 if (!birthYear) {
@@ -78,21 +78,21 @@ if (!alert_s) {
 
  // HT 9 - switch...case
 
-let numOrStr = prompt('input number or string');
+let numOrStr = prompt(`input number or string`);
 console.log(numOrStr);
 
-switch (isNaN(+numOrStr) || numOrStr.trim()) {
-    case null:
-        console.log('ви скасували');
+switch (isNaN(+numOrStr) || String(numOrStr).trim()) {
+    case `null`:
+        console.log(`ви скасували`);
         break;
     case '':
-        console.log('Empty String');
+        console.log(`Empty String`);
         break;
     case true:
-        console.log('number is Ba_NaN');
+        console.log(`number is Ba_NaN`);
         break;
     default:
-        console.log('OK!')
+        console.log(`OK!`)
 }
 
 
