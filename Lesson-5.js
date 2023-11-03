@@ -1,7 +1,7 @@
 const array = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47];
 const length = array.length;
 
-//1,5,6,7,8,9
+//Tasks 1,5,6,7,8,9
 
 let sum = 0;
 let multiplicationPositive = 1;
@@ -34,7 +34,7 @@ console.log(`Sum of positive and odd numbers = ${sumOddPositive}`);
 console.log(`Quantity of positive and even numbers = ${evenQuantity}`);
 
 
-//2,3
+//Tasks 2,3
 let minIndex = 0;
 let maxIndex = 0;
 let minValue = array[minIndex];
@@ -55,7 +55,7 @@ console.log(`Element index = ${minIndex}`);
 console.log(`Max element = ${maxValue}`);
 console.log(`Element index = ${maxIndex}`);
 
-//4
+//Task 4
 
 let negativeQuantity = 0;
 for (let i = 0; i < length; i++) {
@@ -65,7 +65,7 @@ for (let i = 0; i < length; i++) {
 }
 console.log(`Quantity of negative numbers = ${negativeQuantity}`);
 
-//10
+//Task 10
 let index = 0;
 let maxValue2 = array[index];
 for (let i = 1; i < length; i++) {
