@@ -10,7 +10,6 @@ const generateKey = (length, characters) => {
     }
     return result;
 }
-
 const key = generateKey(16, characters);
 console.log(key);
 
