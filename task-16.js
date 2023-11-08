@@ -54,3 +54,11 @@ let users = [
         "address": "314 Dunne Place, Bawcomville, Guam, 9053"
     }
 ]
+
+const minBalance = 2000;
+const usersFiltered = users.filter((user) => {
+    return parseFloat(
+        user.balance.replace(`$`, ``).replace(`,`, ``)
+    ) > minBalance;
+}).map((user) => user.phone);
+console.log(usersFiltered);
