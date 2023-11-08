@@ -1,7 +1,26 @@
-const arrayLen = +prompt (`Enter length array`);
-let userArray = [];
-for (let i = 0; i < arrayLen; i++){
-    userArray[i] = +prompt ("Enter the value of the array");
-}
-console.log('Sort an array in ascending order - ', userArray.sort());
-console.log('Deleting index 2-4 -', userArray.splice(1-4));
+//
+// const userArray = prompt(`Enter an array through the coma`);
+//
+// let comma = ",";
+// let arrayOfStrings = userArray.split(comma);
+//
+// console.log(arrayOfStrings.sort());
+// arrayOfStrings.splice(2,3);
+// console.log(arrayOfStrings);
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
