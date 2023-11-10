@@ -63,3 +63,14 @@ const usersFiltered = users.filter((user) => {
 }).map((user) => user.phone);
 console.log(usersFiltered);
 
+console.log(minBalance);
+
+const usersBalanceSum =
+  users.map((user) => {
+      return parseFloat(
+        user.balance.replace(`$`, ``).replace(`,`, ``))
+  } ) .reduce((a, b) => (a + b))
+
+
+console.log(usersBalanceSum);
+

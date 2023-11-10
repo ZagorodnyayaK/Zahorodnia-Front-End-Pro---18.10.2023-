@@ -51,7 +51,7 @@ const twoDArray3 = (item1, item2, arr) => {
     return array
 }
 
-console.log(twoDArray3(5,5,5))
+console.log(twoDArray3(4,2,0))
 
 
 
