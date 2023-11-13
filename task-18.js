@@ -1,4 +1,4 @@
-function numberDegree(x, n) {
+const numberDegree = (x, n) =>{
     if (n === 1) {
         return x;
     } else {
@@ -6,4 +6,4 @@ function numberDegree(x, n) {
     }
 }
 
-console.log( numberDegree(5, 5) );
+console.log(numberDegree(5, 5));
