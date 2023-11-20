@@ -5,7 +5,7 @@ class Human {
     }
 
     infoHuman() {
-        console.log(`Name - ${this.name}, age  ${this.age}`);
+        console.log(`Name: ${this.name}, age: ${this.age}`);
     }
 }
 
@@ -34,11 +34,12 @@ class Car {
     carInfo() {
         if (this.owner) {
             console.log(`Brand: ${this.brand}, model: ${this.model}, year of manufacture ${this.yearOfManufacture},`
-                + `registration number ${this.numberCar}
+                + ` registration number ${this.numberCar}
+        
         Car owner: `);
             this.owner.infoHuman();
         } else {
-           console.log(`You cannot have a car`)
+            console.log(`You cannot have a car`)
         }
     }
 }
