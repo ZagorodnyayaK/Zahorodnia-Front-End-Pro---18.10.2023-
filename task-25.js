@@ -1,0 +1,5 @@
+class SuperMath {
+    check(obj){
+
+    }
+}

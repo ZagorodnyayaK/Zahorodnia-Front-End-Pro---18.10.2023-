@@ -1,5 +1,5 @@
 class Student {
-    assessment = [2, 70, 70, 93, 90, 88, 88, 94, 91, 100, 98, 97, 96, 96, 100, 92, 94, 94, 98, 96, 90, 97, 97];// assessment = [91, 97, 93, 93, 90, 93, 100, 94, 91, 100, 98, 97, 96, 96, 100, 92, 94, 94, 98, 96, 90, 97, 97];
+    assessment = [];// assessment = [91, 97, 93, 93, 90, 93, 100, 94, 91, 100, 98, 97, 96, 96, 100, 92, 94, 94, 98, 96, 90, 97, 97];
     static lessonCount = 25;
     static minVisitAverege = 0.9;
     static minAssesment = 90;
@@ -35,84 +35,47 @@ class Student {
     }
 
     summary() {
-        const presentCount = this.visits.filter((item)=> item === 1);
+        const presentCount = this.visits.filter((item) => item === 1);
         const visitsAverage = presentCount.length / Student.lessonCount;
         // console.log(visitsAverage);
         if (visitsAverage > Student.minVisitAverege && this.averageScore() > Student.minAssesment) {
             return `Excellent!`;
         }
-        if (visitsAverage > Student.minVisitAverege || this.averageScore() > Student.minAssesment){
+        if (visitsAverage > Student.minVisitAverege || this.averageScore() > Student.minAssesment) {
             return 'Good, but you can do better';
         }
-            return 'You are Redicka:)'
+        return 'You are Rediska:)'
     }
 }
 
 const student1 = new Student(`Kseniia`, `Zahorodnia`, `1993`);
 const student2 = new Student(`Valeriy`, `Koval`, `1994`);
-// const student3 = new Student(`Melnik`, `Viktoriya`, `1992`);
-
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.present();
-student1.absent();
-student1.absent();
+const student3 = new Student(`Viktoriia`, `Melnik`, `1992`);
 
 
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.absent();
-student2.present();
-student2.present();
+student1.assessment = [90, 91, 70, 98, 94, 91, 100, 98, 97, 96, 96, 100, 92, 94, 94, 98, 96, 90, 97, 97];
+student2.assessment = [90, 50, 88, 94, 91, 100, 98, 97, 96, 30, 100, 92, 71, 94, 98, 96, 70, 97, 97];
+student3.assessment = [100, 91, 100, 90, 95, 100, 94, 91, 100, 98, 100, 100, 96, 100, 92, 94, 94, 98, 96, 90, 97, 97];
 
-// console.log(student1);
-// console.log(student2);
-//
-// console.log(student1.studentAge());
-// console.log(student2.studentAge());
-//
-// console.log(student1.averageScore())
+let absentCount = 0;
+for (let i = 0; i < Student.lessonCount; i++) {
+    absentCount <= 2 ? student1.absent() : student1.present();
+    absentCount++;
+}
 
+absentCount = 0;
+for (let i = 0; i < Student.lessonCount; i++) {
+    absentCount <= 6 ? student2.absent() : student2.present();
+    absentCount++;
+}
+
+absentCount = 0;
+for (let i = 0; i < Student.lessonCount; i++) {
+    absentCount <= 1 ? student3.absent() : student3.present();
+    absentCount++;
+}
 
 console.log(student1.summary());
 console.log(student2.summary());
+console.log(student3.summary());
 
