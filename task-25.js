@@ -3,27 +3,15 @@ class SuperMath {
     #validationError = null;
 
     check(obj) {
-        const answer = prompt(`Do you want to perform an action?`);
-        if (answer === `yes` || answer === `ok`) {
-            if (this.#validate(obj.zn, obj.y)) {
-                alert(this.#getOperationResult(obj.X, obj.Y, obj.zn));
-            } else {
-                alert(this.#validationError);
-            }
-        } else {
-            this.input();
-        }
+        this.#validate(obj.zn, obj.Y) ? alert(this.#getOperationResult(obj.X, obj.Y, obj.zn)) : alert(this.#validationError);
     }
 
     input() {
         const x = +prompt(`Enter first operand`);
         const y = +prompt(`Enter second operand`);
         const znak = prompt(`Enter operator`);
-        if (this.#validate(znak, y)) {
-            alert(this.#getOperationResult(x, y, znak));
-        } else {
-            alert(this.#validationError);
-        }
+
+        return {X: x, Y: y, zn: znak};
     }
 
     #getOperationResult(x, y, znak) {
@@ -55,8 +43,14 @@ class SuperMath {
     }
 }
 
-
 const p = new SuperMath()
+let obj = {X: 12, Y: 3, zn: `/`};
+const answer = confirm(`Do you want to perform an action?`);
+if (answer) {
+    p.check(obj);
+} else {
+    obj = p.input();
+    p.check(obj);
+}
 
-p.check({X: 12, Y: 3, zn: `/`});
 
