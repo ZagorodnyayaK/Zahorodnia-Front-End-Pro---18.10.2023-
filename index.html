@@ -6,21 +6,37 @@
     <title>Document</title>
 </head>
 <style>
-    body {
+    .div_body {
         border: 3px solid #f00;
-        line-height: 60px;
-        margin: 10px;
         padding: 10px;
+        width: max-content;
+        display: flex;
+        align-items: center;
+
     }
-    .ghost{
+
+    .ghost {
         border: 3px solid blue;
+        height: 25px;
+        text-align: center;
+        vertical-align: middle;
+        width: 100px;
+        padding: 10px;
+        visibility: hidden;
     }
+
+    .my_input {
+        margin: 10px;
+    }
+
 </style>
 <body>
-<div>
-    <input type="text" id="1" name="mytext"/>
+<div class="div_body">
+    <label class="my_label" for='1'>Click to focus</label>
+    <input class="my_input" type="text" id="1" name="mytext"/>
+    <div class="ghost">DIV ghost</div>
 </div>
-<div class="ghost">DIV ghost</div>
+
 <script src="task-31.js"></script>
 </body>
 </html>
