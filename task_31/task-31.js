@@ -4,10 +4,10 @@ const divGhost = document.querySelector(`.ghost`);
 const input = document.querySelector(`.my_input`);
 
 input.addEventListener(`focus`, () => {
-    divGhost.style.visibility = "visible";
+    divGhost.style.display = "inline";
 });
 input.addEventListener(`blur`, () => {
-    divGhost.style.visibility = "hidden";
+    divGhost.style.display = "none";
 });
 
 
