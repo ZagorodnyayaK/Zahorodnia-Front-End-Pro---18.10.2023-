@@ -6,36 +6,47 @@
     <title>Document</title>
 </head>
 <style>
-.numbers__img{
-    width: 100px;
-    height: 100px;
-}
-.numbers{
-    margin: 10px;
-    padding: 0;
-    position: relative;
-    max-height:164px;
-    background: #c2c2c2;
-    border: 1px solid #000;
-    border-radius:3px;
-}
-.changeImg{
-    margin: 50px auto auto 100px;
-}
-.parent__div{
-    display: flex;
-}
+    .numbers__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .numbers {
+        margin: 10px;
+        padding: 0;
+        position: relative;
+        max-height: 165px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+
+    .numbers img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .changeImg {
+        margin: 50px auto auto 100px;
+    }
+
+    .parent__div {
+        display: flex;
+    }
 </style>
 <body>
 <div class="parent__div">
-<div class="numbers__img">
-    <img class="numbers" src="images/1.jpg" alt="1" id="rand_img">
-</div>
-<div>
-    <button class="changeImg">
-        Change image
-    </button>
-</div>
+    <div class="numbers__img">
+        <img class="numbers" src="images/1.jpg" alt="1" id="rand_img">
+    </div>
+    <div>
+        <button class="changeImg">
+            Change image
+        </button>
+    </div>
 </div>
 <script src="task-32.js"></script>
 </body>
