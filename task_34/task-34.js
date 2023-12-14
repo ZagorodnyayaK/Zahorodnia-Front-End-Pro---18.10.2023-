@@ -1,11 +1,11 @@
 'use strict';
 
 // const enterLinkBtn = document.getElementById(`.enterBtn`);
-const followLink = document.getElementById(`btnId`);
-const inpSite = document.getElementById(`inpID`);
+const followLink = document.querySelectorAll('.input-link');
+const inputSite = document.querySelectorAll('.validation-button');
 
-followLink.addEventListener("click", function () {
-    let link = inpSite.value;
+followLink.addEventListener('click', () => {
+    let link = inputSite.value;
     if (!link) {
         alert('Link is missing');
     } else {
@@ -14,4 +14,4 @@ followLink.addEventListener("click", function () {
         }
         window.location.href = link;
     }
-})
+});

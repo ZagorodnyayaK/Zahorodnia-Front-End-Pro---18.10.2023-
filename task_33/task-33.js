@@ -1,17 +1,22 @@
 'use strict';
 
-const btn = document.querySelector('.changeImg');
-const arrImages = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
+const button = document.querySelector('.change-img');
+const arrayImages = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'];
 
 
-const getRandomImg = (arrImages) =>{
-    let randIndex = Math.floor(Math.random() * (arrImages.length));
-    return `images/${arrImages[randIndex]}`;
+const getRandomIndex = (arrayImages) =>{
+    return Math.floor(Math.random() * (arrayImages.length));
 }
 
-const initRandImg = (arrImages) => {
-    const img = document.getElementById('rand_img');
-    img.src = getRandomImg(arrImages);
+const getRandomImg = (arrayImages) => {
+     return `images/${arrayImages[getRandomIndex(arrayImages)]}`;
 }
 
-btn.addEventListener('click', () => initRandImg(arrImages));
+const initRandomImg = (arrayImages) => {
+    const image = document.querySelector('.numbers');
+    image.src = getRandomImg(arrayImages);
+
+}
+
+button.addEventListener('click', () => initRandomImg(arrayImages));
+
