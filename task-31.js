@@ -1,3 +1,5 @@
+'use strict';
+
 const divGhost = document.querySelector(`.ghost`);
 const input = document.querySelector(`.my_input`);
 
