@@ -1,8 +1,8 @@
 'use strict';
 
 // const enterLinkBtn = document.getElementById(`.enterBtn`);
-const followLink = document.querySelectorAll('.input-link');
-const inputSite = document.querySelectorAll('.validation-button');
+const followLink = document.querySelector('.input-link');
+const inputSite = document.querySelector('.validation-button');
 
 followLink.addEventListener('click', () => {
     let link = inputSite.value;
