@@ -22,17 +22,21 @@
     }
 
     label {
-        color: brown;
+        color: midnightblue;
         font-size: 20px;
     }
 
     .validation-button {
         color: midnightblue;
     }
+
     .div_body {
-        border: 3px solid #f00;
-        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        height: 100px;
         width: max-content;
+        margin: 10px;
+        padding: 10px;
         display: flex;
         align-items: center;
 
@@ -55,12 +59,21 @@
 
 </style>
 <body>
+    <H3>Task 33</H3>
+<div class="div_body">
+    <label class="my_label" for='1'>Click to focus</label>
+    <input class="my_input" type="text" id="1"/>
+    <div class="ghost">DIV ghost</div>
+</div>
+    <H3>Task 34</H3>
 <div class="parent">
     <label for="inpID">Enter website</label>
     <input type="text" class="input-link" id="inpID">
     <button class="validation-button">Validate</button>
 </div>
 
+
+<script src="task-33.js"></script>
 <script src="task-34.js"></script>
 </body>
 </html>
