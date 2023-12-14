@@ -1,7 +1,7 @@
 'use strict';
 
 const divGhost = document.querySelector(`.ghost`);
-const input = document.querySelector(`.my_input`);
+const input = document.querySelector(`.my-input`);
 
 input.addEventListener(`focus`, () => {
     divGhost.style.display = "inline";
