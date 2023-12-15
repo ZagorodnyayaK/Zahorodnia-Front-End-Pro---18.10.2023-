@@ -31,6 +31,7 @@ const genTable = () => {
     }
 };
 
+
 refreshButton.addEventListener('click', () => {
     addTable()
 });
