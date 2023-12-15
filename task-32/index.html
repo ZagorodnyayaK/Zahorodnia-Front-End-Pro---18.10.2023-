@@ -18,24 +18,29 @@
         color: #333;
     }
 
-    .refresh {
-        margin: 10px;
+    .parent-div-table {
+        display: flex;
+        width: max-content;
+        padding: 30px;
     }
 
-    .parent-div-table{
-        display: flex;
+    .table {
+        width: 350px;
+        height: 350px;
     }
+
 </style>
 
 <body>
 <div class="parent-div-table">
-    <table>
-        <tbody></tbody>
-    </table>
+    <div class="table">
+        <table>
+            <tbody></tbody>
+        </table>
+    </div>
     <div>
-
-        <button class="refresh">
-            Refresh numbers
+        <button class="fill-table">
+            Fill the table
         </button>
     </div>
 </div>
