@@ -2,11 +2,14 @@
 
 const tbody = document.querySelector('table > tbody');
 const refreshButton = document.querySelector('.fill-table');
+const divTable = document.querySelector('.table')
+
 
 const addTable = () => {
     if (!tbody.childNodes) {
         genTable();
     } else {
+        refreshButton.innerHTML = 'Refresh numbers';
         {
             while (tbody.firstChild) {
                 tbody.firstChild.remove()
@@ -33,5 +36,6 @@ const genTable = () => {
 
 
 refreshButton.addEventListener('click', () => {
+    divTable.style.display = 'table-cell';
     addTable()
-});
+})
