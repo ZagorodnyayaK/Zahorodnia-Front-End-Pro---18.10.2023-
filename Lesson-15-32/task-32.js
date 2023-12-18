@@ -38,4 +38,4 @@ const genTable = () => {
 refreshButton.addEventListener('click', () => {
     divTable.style.display = 'table-cell';
     addTable()
-})
+});
