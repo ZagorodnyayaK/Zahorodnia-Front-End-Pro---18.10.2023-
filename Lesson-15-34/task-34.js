@@ -8,7 +8,7 @@ followLink.addEventListener('click', () => {
     if (!link) {
         alert('Link is missing');
     } else {
-        if (link.startsWith('http') === false && link.startsWith('https') === false) {
+        if (!link.startsWith('http') && link.startsWith('https') === false) {
             link = `https://${link}`;
         }
         window.location.href = link;
