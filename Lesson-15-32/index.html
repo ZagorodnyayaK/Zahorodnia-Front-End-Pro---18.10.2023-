@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, td {
+        border: 1px solid #CCC;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Tahoma, sans-serif;
+        color: #333;
+    }
+
+    .parent-div-table {
+        display: flex;
+        width: max-content;
+        padding: 30px;
+    }
+
+    .table {
+        width: 350px;
+        height: 350px;
+    }
+
+</style>
+
+<body>
+<div class="parent-div-table">
+    <div class="table">
+        <table>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div>
+        <button class="fill-table">
+            Fill the table
+        </button>
+    </div>
+</div>
+<script src="task-32.js"></script>
+</body>
+</html>
