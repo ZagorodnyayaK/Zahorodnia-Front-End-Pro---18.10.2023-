@@ -1,60 +1,77 @@
-body  {
-    width: 100vw;
-    height: 100vh;
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
     background: url("images/fongazon.jpg") no-repeat;
     background-size: cover;
     position: relative;
-    font-size: 20px;
-}
-li {
-    list-style-type: none;
+    font-size: 16px;
 }
 
-* {
-    padding: 0;
+ul{
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
 }
+
+li{
+    padding-left: 0;
+}
+
 
 H1 {
     color: green;
     position: absolute;
     top: 50px;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
-.header{
+
+.header {
     display: block;
     height: 100px;
+    width: 1200px;
 }
 
 .container {
-    width: 1300px;
-    margin: 0 auto ;
-    background-color: darkseagreen;
-    opacity: 0.9;
+    width: 1200px;
+    margin: 0 auto;
 
 }
 
 .items {
     display: flex;
-    border: black solid;
+    background-color: rgba(255, 255, 255, 0.84);
+
 }
 
 .item-menu {
-    width: 20%;
-    border: black solid;
+    width: 15%;
+
 }
 
 .item-product {
     width: 25%;
-    border: black solid;
+
 
 }
 
 .item-product-info {
-    width: 55%;
-    border: black solid;
+    width: 60%;
+
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.logo-img{
+    position: relative;
+    height: 100px;
+    padding: 0;
+    left: -138px;
 }
