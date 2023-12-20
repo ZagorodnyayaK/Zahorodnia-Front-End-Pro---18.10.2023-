@@ -1,0 +1,60 @@
+body  {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url("images/fongazon.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    font-size: 20px;
+}
+li {
+    list-style-type: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+H1 {
+    color: green;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.header{
+    display: block;
+    height: 100px;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto ;
+    background-color: darkseagreen;
+    opacity: 0.9;
+
+}
+
+.items {
+    display: flex;
+    border: black solid;
+}
+
+.item-menu {
+    width: 20%;
+    border: black solid;
+}
+
+.item-product {
+    width: 25%;
+    border: black solid;
+
+}
+
+.item-product-info {
+    width: 55%;
+    border: black solid;
+}
