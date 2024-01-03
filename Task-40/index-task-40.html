@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    legend {
+        font-size: 18px;
+        background-color: cadetblue;
+        color: #000;
+        padding: 3px 6px;
+    }
+button{
+    background-color: cadetblue;
+    padding: 5px 10px;
+}
+    .name,
+    .birth,
+    .gender,
+    .city,
+    .address,
+    .language {
+        margin: 15px;
+    }
+.button {
+    padding: 20px;
+
+}
+
+.section{
+    width: 550px;
+    background-color: #dde8e6;
+}
+
+</style>
+<body>
+
+<div class="section">
+    <fieldset>
+        <legend>Данні користувача</legend>
+        <div class="name">
+            <label for="label_name">Ім'я</label>
+            <input type="text" placeholder="ім'я" id="label_name"/>
+            <label for="label_surname">Прізвище</label>
+            <input type="text" placeholder="прізвище" id="label_surname"/>
+        </div>
+        <div class="birth">
+            <label for="birth">Дата народження</label>
+            <input type="text" placeholder="20.01.1993" id="birth"/>
+        </div>
+        <div class="gender">
+            <label for="male">Чоловіча</label>
+            <input type="radio" name="gender" placeholder="20.01.1993" id="male"/>
+            <label for="female">Жіноча</label>
+            <input type="radio" name="gender" placeholder="20.01.1993" id="female"/>
+        </div>
+        <div class="city">
+            <label for="city">Місто</label>
+            <select id="city">
+                <option value="value1">Київ</option>
+                <option value="value2" selected>Дніпро</option>
+                <option value="value3">Харьків</option>
+                <option value="value3">Полтава</option>
+                <option value="value3">Одеса</option>
+            </select>
+        </div>
+        <div class="address">
+            <label for="address">Адреса</label>
+            <textarea id="address" rows="3" cols="30"></textarea>
+        </div>
+        <div class="language">
+            <label for="ua">Українська</label>
+            <input type="checkbox" id="ua"/>
+            <label for="eng">Англійська</label>
+            <input type="checkbox" id="eng"/>
+            <label for="dach">Німецька</label>
+            <input type="checkbox" id="dach"/>
+        </div>
+        <div class="button">
+            <button>Зберегти</button>
+        </div>
+    </fieldset>
+</div>
+<script src="task-40.js"></script>
+</body>
+</html>
