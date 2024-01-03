@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600&display=swap"
+          rel="stylesheet">
+    <title>Garden shop</title>
+</head>
+<body>
+<div class=" container">
+    <header class="header">
+        <H1>Садовий магазин</H1>
+        <a class="logo" href="#">
+            <img src="images/pngwing.com.png" alt="logo" class="logo-img">
+        </a>
+    </header>
+    <div class="items">
+        <div class="item-menu">
+            <ul>
+                <li class="menu" item-attribute="home-plants">Кімнатні рослини</li>
+                <li class="menu" item-attribute="garden-plants">Садові рослини</li>
+                <li class="menu" item-attribute="fruits-trees">Фруктові дерева</li>
+            </ul>
+        </div>
+        <div class="item-product">
+        </div>
+        <div class="item-product-info" hidden="hidden">
+            <div class="product-description">
+                <div class="item-product-info-img">
+                    <img src="images/ficus.jpg" class="item-product-img" alt="ficus">
+                </div>
+                <div>
+                    <div class="description"><H3></H3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buy-button">
+                <button class="buy-btn">замовити</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="orders">
+    <div class="about-client">
+        <div class="name">
+            <label for="label_name">Ім'я</label>
+            <input type="text" placeholder="Ім'я" id="label_name"/><Br>
+            <label for="label_surname">Прізвище</label>
+            <input type="text" placeholder="Прізвище" id="label_surname"/><Br>
+            <label for="label_father">По-батькові</label>
+            <input type="text" placeholder="По-батькові" id="label_father"/><Br>
+        </div>
+        <div class="select-city">
+            <label for="city">Місто</label>
+            <select id="city">
+                <option value="value1">Київ</option>
+                <option value="value2" selected>Дніпро</option>
+                <option value="value3">Харків</option>
+                <option value="value3">Полтава</option>
+                <option value="value3">Одеса</option>
+            </select>
+        </div>
+        <div class="comments">
+            <label for="comments">Коментар до замовлення</label><Br>
+            <textarea id="comments" rows="3" cols="50"></textarea>
+        </div>
+        <div class="pay">
+            <label for="card">Оплата картою</label>
+            <input type="radio" name="pay"  id="card"/><Br>
+            <label for="cash">Післясплата</label>
+            <input type="radio" name="pay"  id="cash"/>
+        </div>
+        <div class="address">
+            <label for="address">Данні для відправки новою поштою</label><Br>
+            <textarea id="address" rows="3" cols="50"></textarea>
+        </div>
+        <div class="quantity">
+            <label for="quantity">Кількість</label>
+            <input type="number" name="gender"  id="quantity"/><Br>
+        </div>
+        <div class="buy-button">
+            <button class="buy-btn">замовити</button>
+        </div>
+    </div>
+</div>
+<script src="task-39.js"></script>
+</body>
+</html>
