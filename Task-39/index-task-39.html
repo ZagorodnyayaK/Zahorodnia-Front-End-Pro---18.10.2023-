@@ -60,32 +60,47 @@
             <label for="city">Місто</label>
             <select id="city">
                 <option value="value1">Київ</option>
-                <option value="value2" selected>Дніпро</option>
+                <option value="value2">Дніпро</option>
                 <option value="value3">Харків</option>
                 <option value="value3">Полтава</option>
                 <option value="value3">Одеса</option>
             </select>
         </div>
+        <div class="pay">
+            <label for="card">Оплата картою</label>
+            <input type="radio" name="pay" id="card"/><Br>
+            <label for="cash">Післясплата</label>
+            <input type="radio" name="pay" id="cash"/>
+        </div>
+        <div class="postal">
+            <label for="postal">Віділення Нової пошти</label><Br>
+            <select id="postal">
+                <option value="value1">відділення №1</option>
+                <option value="value2">відділення №2</option>
+                <option value="value3">відділення №3</option>
+                <option value="value3">відділення №4</option>
+                <option value="value3">відділення №5</option>
+            </select>
+        </div>
+        <div class="quantity">
+            <label for="quantity">Кількість</label>
+            <input type="number" name="gender" id="quantity"/><Br>
+        </div>
         <div class="comments">
             <label for="comments">Коментар до замовлення</label><Br>
             <textarea id="comments" rows="3" cols="50"></textarea>
         </div>
-        <div class="pay">
-            <label for="card">Оплата картою</label>
-            <input type="radio" name="pay"  id="card"/><Br>
-            <label for="cash">Післясплата</label>
-            <input type="radio" name="pay"  id="cash"/>
+        <div class="order-button">
+            <button class="order-btn">замовити</button>
         </div>
-        <div class="address">
-            <label for="address">Данні для відправки новою поштою</label><Br>
-            <textarea id="address" rows="3" cols="50"></textarea>
-        </div>
-        <div class="quantity">
-            <label for="quantity">Кількість</label>
-            <input type="number" name="gender"  id="quantity"/><Br>
-        </div>
-        <div class="buy-button">
-            <button class="buy-btn">замовити</button>
+    </div>
+    <div class="about-order">
+        <h2>Деталі замовлення</h2>
+        <div  class="order-description"><img src="images/apple.jpg" alt="" class="order-img">
+            <div>
+                <p>Яблуня</p>
+                <p>Кількість</p>
+            </div>
         </div>
     </div>
 </div>
