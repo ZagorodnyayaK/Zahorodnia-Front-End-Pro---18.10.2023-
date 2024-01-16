@@ -221,7 +221,12 @@ const plants = {
         },
     ]
 }
-const buyButton = document.querySelector('.buy-btn');
+const buttonOrder = document.querySelector('.buy-btn');
+const buttonConfirmation = document.querySelector('.button-order-confirmation');
+const orders = document.querySelector('.orders-description');
+const items = document.querySelector('.items');
+const header = document.querySelector('.header');
+
 const itemMenu = document.querySelector('.item-menu');
 itemMenu.onclick = (e) => {
     const getAttribute = e.target.getAttribute('item-attribute');
@@ -273,7 +278,14 @@ const findElementData = (data, itemName) => {
     });
 };
 
-buyButton.addEventListener('click', () => {
-    alert('Оформлено, дякую за покупку!');
-    window.location.reload();
+buttonOrder.addEventListener('click', () => {
+    orders.style.display = "inline";
+    header.style.marginBottom = "40px";
+    items.style.display = "none";
 });
+
+
+buttonConfirmation.addEventListener('click', () => {
+    alert('Замовлення оформленно, дякую за покупку!');
+    window.location.reload();
+})

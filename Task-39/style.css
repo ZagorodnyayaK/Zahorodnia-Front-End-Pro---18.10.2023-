@@ -40,17 +40,26 @@ H1 {
     letter-spacing: 5px;
     font-style: italic;
 }
+H2{
+    font-size: 20px;
+    text-align: center;
+}
 
 p {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 span {
     font-weight: bold;
+
 }
 
 button:hover {
     box-shadow: 10px 10px 10px grey;
+}
+
+label{
+    margin-right: 20PX;
 }
 
 button {
@@ -103,6 +112,9 @@ button {
     width: 60%;
     margin: 10px;
 }
+.description{
+    height: 150px;
+}
 
 .logo {
     height: 100px;
@@ -116,12 +128,13 @@ button {
     left: 35px;
 }
 
-.item-product-img{
-    width: 180px;
+.item-product-img {
+    width: 200px;
     padding: 50px 20px 0 10px;
 }
+
 .order-img {
-    width: 100px;
+    width: 210px;
     padding: 0;
 }
 
@@ -130,9 +143,19 @@ button {
     padding: 5px;
 }
 
+.description{
+    height: 300px
+}
 
 .buy-button,
-.order-button {
+.order-button,
+.button-order-confirmation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-button-data{
+    margin-top: 62px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +167,9 @@ button {
     display: flex;
     background-color: rgba(255, 255, 255, 0.84);
 }
-
+.orders-description{
+    display: none;
+}
 
 .name,
 .select-city,
@@ -156,18 +181,37 @@ button {
     padding: 15px;
 }
 
+.name{
+    margin-right: 15px;
+}
+
 .about-order {
     width: 50%;
     margin: 0 auto;
 }
-.about-client{
+
+.about-client {
     width: 50%;
     margin: 0 auto;
 }
 
-.order-description{
+.order-description {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.order-info p{
+    font-size: 15px;
+}
+
+.order-details{
+    padding: 0 20px 20px;
+
+}.order-details p{
+    font-size: 15px;
+}
+
 
 
 

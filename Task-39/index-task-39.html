@@ -33,7 +33,7 @@
                 <div class="item-product-info-img">
                     <img src="images/ficus.jpg" class="item-product-img" alt="ficus">
                 </div>
-                <div>
+                <div class="all-description">
                     <div class="description"><H3></H3>
                         <p></p>
                     </div>
@@ -46,60 +46,75 @@
         </div>
     </div>
 </div>
-<div class="orders">
-    <div class="about-client">
-        <div class="name">
-            <label for="label_name">Ім'я</label>
-            <input type="text" placeholder="Ім'я" id="label_name"/><Br>
-            <label for="label_surname">Прізвище</label>
-            <input type="text" placeholder="Прізвище" id="label_surname"/><Br>
-            <label for="label_father">По-батькові</label>
-            <input type="text" placeholder="По-батькові" id="label_father"/><Br>
+<div class="orders-description">
+    <div class="orders">
+        <div class="about-client">
+            <div class="name">
+                <label class="label" for="label_name">Ім'я</label>
+                <input type="text" placeholder="Ім'я" id="label_name"/><Br>
+                <label class="label" for="label_surname">Прізвище</label>
+                <input type="text" placeholder="Прізвище" id="label_surname"/><Br>
+                <label class="label" for="label_father">По-батькові</label>
+                <input type="text" placeholder="По-батькові" id="label_father"/><Br>
+            </div>
+            <div class="select-city">
+                <label class="label" for="city">Місто</label>
+                <select id="city">
+                    <option value="value1" selected></option>
+                    <option value="value1">Київ</option>
+                    <option value="value2">Дніпро</option>
+                    <option value="value3">Харків</option>
+                    <option value="value3">Полтава</option>
+                    <option value="value3">Одеса</option>
+                </select>
+            </div>
+            <div class="pay">
+                <label class="label" for="card">Оплата картою</label>
+                <input type="radio" name="pay" id="card"/><Br>
+                <label class="label" for="cash">Післясплата</label>
+                <input type="radio" name="pay" id="cash"/>
+            </div>
+            <div class="postal">
+                <label class="label" for="postal">Віділення Нової пошти</label><Br>
+                <select id="postal">
+                    <option value="value1" selected></option>
+                    <option value="value1">Відділення №1</option>
+                    <option value="value2">Відділення №2</option>
+                    <option value="value3">Відділення №3</option>
+                    <option value="value3">Відділення №4</option>
+                    <option value="value3">Відділення №5</option>
+                </select>
+            </div>
+            <div class="quantity">
+                <label class="label" for="quantity">Кількість</label>
+                <input type="number" name="gender" id="quantity" min="1" value="1" size="5"/><Br>
+            </div>
+            <div class="comments">
+                <label class="label" for="comments">Коментар до замовлення</label><Br>
+                <textarea id="comments" rows="3" cols="50"></textarea>
+            </div>
+            <div class="order-button-data">
+                <button class="order-btn">зберегти данні</button>
+            </div>
         </div>
-        <div class="select-city">
-            <label for="city">Місто</label>
-            <select id="city">
-                <option value="value1">Київ</option>
-                <option value="value2">Дніпро</option>
-                <option value="value3">Харків</option>
-                <option value="value3">Полтава</option>
-                <option value="value3">Одеса</option>
-            </select>
-        </div>
-        <div class="pay">
-            <label for="card">Оплата картою</label>
-            <input type="radio" name="pay" id="card"/><Br>
-            <label for="cash">Післясплата</label>
-            <input type="radio" name="pay" id="cash"/>
-        </div>
-        <div class="postal">
-            <label for="postal">Віділення Нової пошти</label><Br>
-            <select id="postal">
-                <option value="value1">відділення №1</option>
-                <option value="value2">відділення №2</option>
-                <option value="value3">відділення №3</option>
-                <option value="value3">відділення №4</option>
-                <option value="value3">відділення №5</option>
-            </select>
-        </div>
-        <div class="quantity">
-            <label for="quantity">Кількість</label>
-            <input type="number" name="gender" id="quantity"/><Br>
-        </div>
-        <div class="comments">
-            <label for="comments">Коментар до замовлення</label><Br>
-            <textarea id="comments" rows="3" cols="50"></textarea>
-        </div>
-        <div class="order-button">
-            <button class="order-btn">замовити</button>
-        </div>
-    </div>
-    <div class="about-order">
-        <h2>Деталі замовлення</h2>
-        <div  class="order-description"><img src="images/apple.jpg" alt="" class="order-img">
-            <div>
-                <p>Яблуня</p>
-                <p>Кількість</p>
+        <div class="about-order">
+            <h2>Деталі замовлення</h2>
+            <div class="order-description"><img src="images/apple.jpg" alt="" class="order-img">
+                <div class="order-info">
+                    <p>Яблуня</p>
+                    <p>Кількість: <span>1</span></p>
+                </div>
+            </div>
+            <h2>Данні для відправки</h2>
+            <div class="order-details">
+                <div><p>ПІБ: <span>Сидоренко Іван Сергійович</span></p></div>
+                <div><p>Місто: <span>Дніпро</span></p></div>
+                <div><p><span>Оплата картою</span></p></div>
+                <div><p>Відділення нової пошти: <span>Відділення №1</span></p></div>
+                <div><p>Коментар до замовлення: <span></span></p></div>
+            </div>
+            <div class="order-button">
+                <button class="button-order-confirmation">замовити</button>
             </div>
         </div>
     </div>
