@@ -11,7 +11,7 @@ body {
     background: url("images/fongazon.jpg") no-repeat;
     background-size: cover;
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 ul {
@@ -46,7 +46,7 @@ H2{
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 span {
@@ -147,6 +147,10 @@ button {
     height: 300px
 }
 
+.description p {
+    font-size: 14px;
+}
+
 .buy-button,
 .order-button,
 .button-order-confirmation{
@@ -155,7 +159,7 @@ button {
     justify-content: center;
 }
 .order-button-data{
-    margin-top: 62px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,16 +205,14 @@ button {
     justify-content: space-evenly;
 }
 
-.order-info p{
-    font-size: 15px;
-}
-
-.order-details{
+.order-details {
     padding: 0 20px 20px;
-
-}.order-details p{
-    font-size: 15px;
 }
+
+.orders-name {
+    margin-bottom: 5px;
+}
+
 
 
 
