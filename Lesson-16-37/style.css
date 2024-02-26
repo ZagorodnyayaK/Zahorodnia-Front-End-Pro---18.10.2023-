@@ -1,4 +1,16 @@
-
-.slider{
-    display: flex;
+.container{
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    overflow: hidden;
 }
+
+.container img {
+    width: 100%;
+    display: none;
+}
+ img.displaySlide{
+     display: block;
+ }
+
+

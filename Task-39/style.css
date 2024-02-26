@@ -76,6 +76,14 @@ button {
     border: darkgreen solid 1px;
 }
 
+input:invalid {
+    border: 2px dashed red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
 .header {
     display: block;
     height: 100px;
@@ -92,7 +100,7 @@ button {
     display: flex;
     background-color: rgba(255, 255, 255, 0.84);
     margin: 40px 0;
-    height: 400px;
+    height: 500px;
 }
 
 
@@ -134,7 +142,7 @@ button {
 }
 
 .order-img {
-    width: 210px;
+    width: 120px;
     padding: 0;
 }
 
@@ -167,6 +175,7 @@ button {
 
 .orders {
     width: 1100px;
+    height: 500px;
     margin: 0 auto;
     display: flex;
     background-color: rgba(255, 255, 255, 0.84);
@@ -182,7 +191,7 @@ button {
 .orders,
 .quantity,
 .postal {
-    padding: 15px;
+    padding: 5px 10px;
 }
 
 .name{
@@ -206,7 +215,7 @@ button {
 }
 
 .order-details {
-    padding: 0 20px 20px;
+    padding: 0 20px 10px;
 }
 
 .orders-name {
